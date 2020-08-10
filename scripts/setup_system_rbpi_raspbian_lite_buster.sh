@@ -269,7 +269,7 @@ echo "source $ZYNTHIAN_CONFIG_DIR/zynthian_envars.sh" >> /root/.bashrc
 echo "source $ZYNTHIAN_SYS_DIR/etc/profile.zynthian" >> /root/.profile
 
 # On first boot, resize SD partition, regenerate keys, etc.
-$ZYNTHIAN_SYS_DIR/scripts/set_first_boot.sh
+#$ZYNTHIAN_SYS_DIR/scripts/set_first_boot.sh
 
 
 #************************************************
