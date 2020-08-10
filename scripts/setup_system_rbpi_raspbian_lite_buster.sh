@@ -30,7 +30,7 @@ export DEBIAN_FRONTEND=noninteractive
 # Update System & Firmware
 #------------------------------------------------
 
-apt purge x11-common
+apt-get -y purge x11-common
 
 # Update System
 apt-get -y update
