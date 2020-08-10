@@ -43,7 +43,7 @@ apt-get -y install apt-utils apt-transport-https rpi-update sudo software-proper
 [ -n "$ZYNTHIAN_INCLUDE_RPI_UPDATE" ] || ZYNTHIAN_INCLUDE_RPI_UPDATE=yes
 [ -n "$ZYNTHIAN_INCLUDE_PIP" ] || ZYNTHIAN_INCLUDE_PIP=yes
 [ -n "$ZYNTHIAN_CHANGE_HOSTNAME" ] || ZYNTHIAN_CHANGE_HOSTNAME=yes
-[ -n "$ZYNTHIAN_SYS_REPO" ] || ZYNTHIAN_SYS_REPO=https://github.com/zynthian/zynthian-sys.git
+[ -n "$ZYNTHIAN_SYS_REPO" ] || ZYNTHIAN_SYS_REPO=https://github.com/lguyome45/zynthian-sys.git
 [ -n "$ZYNTHIAN_SYS_BRANCH" ] || ZYNTHIAN_SYS_BRANCH=master
 
 # Adjust System Date/Time
@@ -51,7 +51,7 @@ apt-get -y install apt-utils apt-transport-https rpi-update sudo software-proper
 
 # Update Firmware
 if [ "$ZYNTHIAN_INCLUDE_RPI_UPDATE" == "yes" ]; then
-    rpi-update
+    rpi-update e1050e94821a70b2e4c72b318d6c6c968552e9a2
 fi
 
 #------------------------------------------------
@@ -280,7 +280,7 @@ $ZYNTHIAN_SYS_DIR/scripts/set_first_boot.sh
 apt-get -y install jack-midi-clock midisport-firmware
 
 # Install Jack2
-$ZYNTHIAN_RECIPE_DIR/install_jack2.sh
+# $ZYNTHIAN_RECIPE_DIR/install_jack2.sh
 
 # Install alsaseq Python Library
 #$ZYNTHIAN_RECIPE_DIR/install_alsaseq.sh
