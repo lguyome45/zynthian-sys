@@ -31,10 +31,10 @@ export JACKD_OPTIONS="-P 70 -t 2000 -s -d alsa -d hw:sndrpihifiberry -r 44100 -p
 
 #Display Config
 export DISPLAY_NAME="ZynScreen 3.5 (v1)"
-export DISPLAY_CONFIG="dtoverlay=piscreen2r-notouch,rotate=270\ndtoverlay=ads7846,speed=2000000,cs=1,penirq=17,penirq_pull=2,swapxy=1,xohms=100,pmax=255"
-export DISPLAY_WIDTH="480"
-export DISPLAY_HEIGHT="320"
-export FRAMEBUFFER="/dev/fb1"
+#export DISPLAY_CONFIG="dtoverlay=piscreen2r-notouch,rotate=270\ndtoverlay=ads7846,speed=2000000,cs=1,penirq=17,penirq_pull=2,swapxy=1,xohms=100,pmax=255"
+export DISPLAY_WIDTH="none"
+export DISPLAY_HEIGHT="none"
+export FRAMEBUFFER="/dev/fb0"
 
 # Zynthian Wiring Config
 export ZYNTHIAN_WIRING_LAYOUT="MCP23017_ZynScreen"
