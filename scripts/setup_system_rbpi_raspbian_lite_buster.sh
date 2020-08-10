@@ -377,7 +377,7 @@ ln -s /usr/local/share/setBfree/cfg/default.cfg ./setbfree
 cp -a $ZYNTHIAN_DATA_DIR/setbfree/cfg/zynthian_my.cfg ./setbfree/zynthian.cfg
 
 # Install Pianoteq Demo (Piano Physical Emulation)
-$ZYNTHIAN_RECIPE_DIR/install_pianoteq_demo.sh
+# $ZYNTHIAN_RECIPE_DIR/install_pianoteq_demo.sh
 
 # Install Aeolus (Pipe Organ Emulator)
 #apt-get -y install aeolus
