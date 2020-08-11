@@ -30,4 +30,4 @@ fi
 systemctl disable first_boot
 
 # Resize partition
-$ZYNTHIAN_SYS_DIR/scripts/rpi-wiggle.sh
+#$ZYNTHIAN_SYS_DIR/scripts/rpi-wiggle.sh
