@@ -84,7 +84,7 @@ function custom_config {
 #------------------------------------------------------------------------------
 
 if [ -z "$FRAMEBUFFER" ]; then
-	export FRAMEBUFFER="/dev/fb0"
+	export FRAMEBUFFER="/dev/fb1"
 fi
 
 if [ -f "/usr/local/bin/jackd" ]; then
