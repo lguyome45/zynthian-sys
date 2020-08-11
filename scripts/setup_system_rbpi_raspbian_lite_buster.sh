@@ -448,3 +448,4 @@ apt-get -y autoremove # Remove unneeded packages
 if [[ "$ZYNTHIAN_SETUP_APT_CLEAN" == "yes" ]]; then # Clean apt cache (if instructed via zynthian_envars.sh)
     apt-get clean
 fi
+$ZYNTHIAN_SYS_DIR/scripts/set_first_boot.sh
